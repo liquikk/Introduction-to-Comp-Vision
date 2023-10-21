@@ -8,8 +8,6 @@ wires = np.load("wires6.npy")
 struct = np.ones((3,1))
 
 labeled = label(wires)
-new_image = np.zeros_like(wires)
-new_image[labeled==3] = 1
 
 for lb in range(1, np.max(labeled)+1):
     new_image = np.zeros_like(wires)
