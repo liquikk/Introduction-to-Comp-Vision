@@ -24,7 +24,7 @@ trajectories = np.array(trajectories)
 plt.figure(figsize=(8, 8))
 
 for i in range(trajectories.shape[1]):
-    plt.scatter(trajectories[:, i, 1], trajectories[:, i, 0], label=f"Object {i + 1}")
+    plt.plot(trajectories[:, i, 1], trajectories[:, i, 0], label=f"Object {i + 1}")
 
 plt.title("Траектории движения объектов")
 plt.legend()
